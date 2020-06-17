@@ -1,0 +1,34 @@
+.addOption__error{
+    color: $off-white;
+    font-style: italic;
+    margin: 0;
+    padding: $s-size $m-size;
+}
+
+.addOption{
+    display: flex;
+    flex-direction: column;
+    padding: $m-size;
+}
+
+.addOption__input{
+    flex-grow: 1;
+    border-radius: 0;
+    background: $dark-blue;
+    border: none;
+    border-bottom: .3rem sold darken($color: $dark-blue, $amount: 10%);
+    margin: 0 0 $s-size 0;
+    padding: $s-size;
+    color: $off-white;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .addOption{
+        flex-direction: row;
+    }
+    
+    .addOption__input{
+        margin: 0 $s-size 0 0;
+    }
+}
+
